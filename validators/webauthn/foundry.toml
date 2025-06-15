@@ -1,0 +1,41 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+bytecode_hash = "none"
+cbor_metadata = false
+optimize = true
+solc = "0.8.28"
+via-ir = true
+runs = 1000
+
+[profile.deploy]
+via-ir = true
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+[fuzz]
+runs = 256
+
+
+[etherscan]
+  mainnet = { key = "${ETHERSCAN_API_KEY}" }
+  arbitrum = { key = "${ARBISCAN_API_KEY}" }
+  optimism = { key = "${OPTIMISM_API_KEY}" }
+  polygon = { key = "${POLYGONSCAN_API_KEY}" }
+  base = { key = "${BASESCAN_API_KEY}" }
+  bnbsmartchain = { key = "${BNBSCAN_API_KEY}" }
+  basesepolia = { key = "${BASESCAN_API_KEY}" }
+  sepolia = { key = "${ETHERSCAN_API_KEY}" }
+  gnosis = { key = "${GNOSISSCAN_API_KEY}" }
+
+[rpc_endpoints]
+  localhost = "http://localhost:8545"
+  mainnet = "https://eth-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  optimism = "https://opt-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  arbitrum = "https://arb-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  polygon = "https://polygon-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  base = "https://base-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  bnbsmartchain = "https://bnb-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  sepolia = "https://eth-sepolia.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  basesepolia = "https://base-sepolia.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
+  gnosis = "https://gnosis-mainnet.g.alchemy.com/v2/${API_KEY_ALCHEMY}"
