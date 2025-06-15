@@ -1,0 +1,43 @@
+# Foundry
+cache/
+out/
+broadcast/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Build artifacts
+artifacts/
+build/
+dist/
+
+# Coverage
+coverage/
+coverage.json
+
+# Debug logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Solidity
+*.sol.js
+*.sol.js.map
+
+# Hardhat
+.hardhat/
