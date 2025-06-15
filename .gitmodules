@@ -7,3 +7,6 @@
 [submodule "validators/webauthn/lib/kernel_v3"]
 	path = validators/webauthn/lib/kernel_v3
 	url = https://github.com/zerodevapp/kernel_v3
+[submodule "validators/webauthn/lib/FreshCryptoLib"]
+	path = validators/webauthn/lib/FreshCryptoLib
+	url = https://github.com/zerodevapp/FreshCryptoLib
